@@ -7,7 +7,8 @@ export default createMuiTheme({
       main: "#242424",
     },
     secondary: {
-      main: "#575757"
+      main: "#244f5f",
+      light: "#eca725"
     },
     background: {
       default: "#ffffff",
@@ -56,7 +57,7 @@ export default createMuiTheme({
       fontWeight: 500
     },
     button: {
-      fontWeight: 800
+      fontWeight: 700
     }
   },
   overrides: {
@@ -80,7 +81,7 @@ export default createMuiTheme({
         textTransform: "initial"
       },
       outlined: {
-        fontWeight: 800,
+        fontWeight: 700,
         border: "1px solid #000",
         borderRadius: 0
       },
