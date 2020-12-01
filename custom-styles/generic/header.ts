@@ -1,9 +1,26 @@
 import { createStyles } from "@material-ui/core";
-import theme from "../../theme";
 
 export default createStyles({
 
   container: {
+
+  },
+
+  appBar: {
+
+  },
+
+  toolBar: {
+
+  },
+
+  heading: {
+  },
+
+  banner: {
+  },
+
+  button: {
 
   },
 

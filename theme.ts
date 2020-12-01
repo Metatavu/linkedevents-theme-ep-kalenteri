@@ -5,14 +5,13 @@ export default createMuiTheme({
   palette: {
     primary: {
       main: "#242424",
-      contrastText: "#1e8531"
     },
     secondary: {
       main: "#575757"
     },
     background: {
-      default: "#FFFFFF",
-      paper: "#f5f5f5"
+      default: "#ffffff",
+      paper: "#f7f6f5"
     },
     success: {
       main: "#61C88D"
@@ -21,7 +20,7 @@ export default createMuiTheme({
       main: "#E25353"
     },
     text: {
-      primary: "#252729",
+      primary: "#010101",
       secondary: "#FFFFFF",
       disabled: "#C2C9CF"
     },
@@ -42,15 +41,61 @@ export default createMuiTheme({
     }
   },
 
-  typography: { },
-
+  typography: {
+    fontFamily: "'Raleway', sans-serif",
+    h1: {
+      fontSize: 50,
+      fontWeight: 300,
+    },
+    h2: {
+      fontSize: 26,
+      fontWeight: 500
+    },
+    h3: {
+      fontSize: 22,
+      fontWeight: 500
+    },
+    button: {
+      fontWeight: 800
+    }
+  },
   overrides: {
     MuiCssBaseline: {
       "@global": {
         "::-webkit-scrollbar-track": { },
         "::-webkit-scrollbar": { },
-        "::-webkit-scrollbar-thumb": { }
+        "::-webkit-scrollbar-thumb": { color: "#000" }
       }
+    },
+    MuiCard: {
+      root: {
+        borderRadius: 0
+      }
+    },
+    MuiButton: {
+      root: {
+        borderRadius: 0
+      },
+      label: {
+        textTransform: "initial"
+      },
+      outlined: {
+        fontWeight: 800,
+        border: "1px solid #000",
+        borderRadius: 0
+      },
+      outlinedPrimary: {
+        border: "2px solid #eca725",
+        color: "#244f5f",
+        "&:hover": {
+          border: "2px solid #eca725",
+        }
+      }
+    }
+  },
+  props: {
+    MuiButton: {
+      variant: "outlined",
     }
   }
 });
