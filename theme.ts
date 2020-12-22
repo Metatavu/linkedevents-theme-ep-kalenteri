@@ -21,7 +21,7 @@ export default createMuiTheme({
       main: "#E25353"
     },
     text: {
-      primary: "#010101",
+      primary: "#404040",
       secondary: "#FFFFFF",
       disabled: "#C2C9CF"
     },
@@ -56,8 +56,20 @@ export default createMuiTheme({
       fontSize: 22,
       fontWeight: 500
     },
-    button: {
+    h4: {
+      fontSize: 18,
+      fontWeight: 500
+    },
+    h5: {
+      fontSize: 16,
       fontWeight: 700
+    },
+    h6: {
+      fontSize: 16,
+      fontWeight: 500
+    },
+    button: {
+      fontWeight: 700,
     }
   },
   overrides: {
@@ -73,6 +85,16 @@ export default createMuiTheme({
         borderRadius: 0
       }
     },
+    MuiFormLabel: {
+      root: {
+        color: "#222"
+      }
+    },
+    MuiCheckbox: {
+      root: {
+        color: "#244f5f"
+      }
+    },
     MuiButton: {
       root: {
         borderRadius: 0
@@ -80,10 +102,14 @@ export default createMuiTheme({
       label: {
         textTransform: "initial"
       },
+      text: {
+        color: "#000"
+      },
       outlined: {
         fontWeight: 700,
         border: "1px solid #000",
-        borderRadius: 0
+        borderRadius: 0,
+        color: "#000"
       },
       outlinedPrimary: {
         border: "2px solid #eca725",
@@ -92,7 +118,7 @@ export default createMuiTheme({
           border: "2px solid #eca725",
         }
       }
-    }
+    },
   },
   props: {
     MuiButton: {
