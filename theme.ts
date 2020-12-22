@@ -1,4 +1,7 @@
-import { createMuiTheme } from '@material-ui/core';
+import { createMuiTheme } from "@material-ui/core";
+
+const theme = createMuiTheme();
+const { breakpoints } = theme;
 
 export default createMuiTheme({
 
@@ -44,6 +47,7 @@ export default createMuiTheme({
 
   typography: {
     fontFamily: "'Raleway', sans-serif",
+    fontSize: 16,
     h1: {
       fontSize: 50,
       fontWeight: 300,
@@ -82,13 +86,40 @@ export default createMuiTheme({
     },
     MuiCard: {
       root: {
+        display: "flex",
+        flexDirection: "column",
+        flex: "1 1 auto",
         borderRadius: 0
+      }
+    },
+    MuiCardActionArea: {
+      root: {
+        display: "flex",
+        width: "100%",
+        flexDirection: "column",
+        flex: "1 1 auto",
+        alignItems: "flex-start"
+      }
+    },
+    MuiCardMedia: {
+      root: {
+        display: "flex",
+        width: "100%"
       }
     },
     MuiFormLabel: {
       root: {
         color: "#222"
       }
+    },
+    MuiCardContent: {
+      root: {
+        display: "flex",
+        flexDirection: "column",
+        flex: "1 1 auto",
+        justifyContent: "space-between"
+      }
+
     },
     MuiCheckbox: {
       root: {
@@ -97,7 +128,7 @@ export default createMuiTheme({
     },
     MuiButton: {
       root: {
-        borderRadius: 0
+        borderRadius: 0,
       },
       label: {
         textTransform: "initial"
@@ -119,6 +150,22 @@ export default createMuiTheme({
         }
       }
     },
+    MuiInputBase: {
+      root: {
+        fontSize: 16,
+        fontWeight: 600,
+        color: "#244f5f",
+        [breakpoints.up("sm")]: {
+          fontSize: 16,
+        },
+        [breakpoints.up("md")]: {
+          fontSize: 16,
+        },
+        [breakpoints.up("lg")]: {
+          fontSize: 16,
+        }
+      }
+    }
   },
   props: {
     MuiButton: {
