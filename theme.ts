@@ -84,6 +84,7 @@ export default createMuiTheme({
         "::-webkit-scrollbar-thumb": { color: "#000" }
       }
     },
+
     MuiCard: {
       root: {
         display: "flex",
@@ -92,6 +93,7 @@ export default createMuiTheme({
         borderRadius: 0
       }
     },
+
     MuiCardActionArea: {
       root: {
         display: "flex",
@@ -101,17 +103,20 @@ export default createMuiTheme({
         alignItems: "flex-start"
       }
     },
+
     MuiCardMedia: {
       root: {
         display: "flex",
         width: "100%"
       }
     },
+
     MuiFormLabel: {
       root: {
         color: "#222"
       }
     },
+
     MuiCardContent: {
       root: {
         display: "flex",
@@ -119,13 +124,23 @@ export default createMuiTheme({
         flex: "1 1 auto",
         justifyContent: "space-between"
       }
-
     },
+
+    MuiCardActions: {
+      root: {
+        justifyContent: "center",
+        "& button": {
+          flex: 1
+        }
+      }
+    },
+
     MuiCheckbox: {
       root: {
         color: "#244f5f"
       }
     },
+
     MuiButton: {
       root: {
         borderRadius: 0,
@@ -150,6 +165,7 @@ export default createMuiTheme({
         }
       }
     },
+
     MuiInputBase: {
       root: {
         fontSize: 16,
