@@ -18,7 +18,7 @@ export default createMuiTheme({
       paper: "#f7f6f5"
     },
     success: {
-      main: "#61C88D"
+      main: "#755AB5"
     },
     error: {
       main: "#E25353"
