@@ -47,7 +47,7 @@ export default createMuiTheme({
 
   typography: {
     fontFamily: "'Raleway', sans-serif",
-    fontSize: 16,
+    fontSize: 14,
     h1: {
       fontSize: 50,
       fontWeight: 300,
@@ -58,11 +58,11 @@ export default createMuiTheme({
     },
     h3: {
       fontSize: 22,
-      fontWeight: 500
+      fontWeight: 600
     },
     h4: {
       fontSize: 18,
-      fontWeight: 500
+      fontWeight: 600
     },
     h5: {
       fontSize: 16,
@@ -73,6 +73,7 @@ export default createMuiTheme({
       fontWeight: 500
     },
     button: {
+      fontSize: 16,
       fontWeight: 700,
     }
   },
@@ -81,8 +82,11 @@ export default createMuiTheme({
       "@global": {
         "::-webkit-scrollbar-track": { },
         "::-webkit-scrollbar": { },
-        "::-webkit-scrollbar-thumb": { color: "#000" }
-      }
+        "::-webkit-scrollbar-thumb": { color: "#000" },
+        "p": {
+          fontSize: 16
+        }
+      },
     },
 
     MuiCard: {
